@@ -94,8 +94,8 @@
         currentPara = contentNodeD3.append('div').attr('class', 'book-text');
       }
 
-      paraLabel.attr('class', 'label-chunk')
-        .html('ms' + chunkId);
+      paraLabel.attr('class', 'label-chunk milestone-id')
+        .html('MilestoneID: ' + chunkId);
       currentPara.html(chunkText);;
 
       chunkId = Number(chunkId);
@@ -120,7 +120,13 @@
   function parseBookIntoHtml(text) {
     text = text.replace(/\(@\)/g, "\n"); 
     text =  text.replace(/\(@@\)/g, "\n \n");
-    text = marked(text);
+    text = text.replace(/\~~\)/g, "");
+    text = text.replace(/(PageV\d{2}\w\d{3}?\s)/g, " <br/><a class='page-number' href='https://archive.org/' target='_blank'>$1</a> <br/>")
+    //text = text.replace(/\w+(ms\d{1,}\w+)/g,"<span class='milestone-id'> $1<span>");
+    //text = text.replace(/\#(\w+)\#/g, "<p>$1</p>");
+    
+
+    //text = marked(text);
     return text;
   }
   function selectPara(bookName, currentPara, content, paraLabel) {
@@ -153,7 +159,7 @@
     console.log(selectedMatchData);
     
    // if (IsColorMasking = true){
-    var b1MilestoneID =  '<div class="milestone">book1 (ms' + selectedMatchData['book1_chunk'] + ')</div>'
+    var b1MilestoneID =  '<div class="milestone">Book 1: MilestoneID ' + selectedMatchData['book1_chunk'] + '</div>'
     d3.select('#b1MilestoneID').html(b1MilestoneID);
     var rawContent = window.processColoring(selectedMatchData['book1_raw_content'], selectedMatchData['book2_raw_content'], 'difference-deletion')
      // + '<br/><br/>'
@@ -165,7 +171,7 @@
     //   //+ selectedMatchData['book1_raw_content'];
     
     d3.select('#book1RawContent').html(rawContent);
-    var b2MilestoneID ='<div class="booktitle">book2 (ms' + selectedMatchData['book2_chunk'] + ')</div>'
+    var b2MilestoneID ='<div class="booktitle">Book 2: MilestoneID ' + selectedMatchData['book2_chunk'] + '</div>'
     d3.select('#b2MilestoneID').html(b2MilestoneID);
     var rawContent = window.processColoring(selectedMatchData['book2_raw_content'], selectedMatchData['book1_raw_content'], 'difference-addition')
      // + '<br/><br/>'

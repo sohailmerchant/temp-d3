@@ -152,12 +152,6 @@ div.tooltip {
 
 /*--Books View Bottom Panel -- [START]--*/
 
-#bottomPanelRaw {
-  margin-top: 10px;
-  border-bottom: 1px #e0e0e0 dashed;
-  direction: rtl;
- 
-}
 .panel {
   bdackground-image: url(../Images/icons/education31.png);
   background-position: 10px 6px;
@@ -176,7 +170,7 @@ div.tooltip {
   bdorder: 1px dashed #dbdbdb;
   mardgin-top: 20px;
   bdox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-left: 23px;s
+  margin-top: 20px;
 }
 
 .label{
@@ -188,16 +182,16 @@ div.tooltip {
 .selection-chunk{
 
   direction: rtl;
+  text-align: justify;
 }
 
 .book-content {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   transition: 0.3s;
   width: calc(50% - 14px);
   height: calc(100% - 125px);
   /*color: #afafaf;*/
-  font-size: 15px;
   display: inline-block;
   overflow-y: auto;
   vertical-align: top;
@@ -209,6 +203,7 @@ div.tooltip {
 
 .book-text{
   direction: rtl;
+  text-align: justify;
 
 }
 
@@ -216,14 +211,29 @@ div.tooltip {
   padding: 10px;
 }
 
-.bookalignments{
+.arabic-text-16px{
   font-size: 16px;
+  text-align: right;
+}
+
+.col-xs-6 {
+  width: 49%!important;
 }
 
 
+.arabic-text-20px{
+  font-size: 20px;
+  text-align: right;
+}
+
+.arabic-text-18px{
+  font-size: 18px;
+  text-align: right;
+}
+
 .book-reader .closebtn {
   color: #818181;
-  font-size: 15px;
+  
   padding: 2px 5px;
   text-decoration: none;
   display: block;
@@ -312,8 +322,44 @@ text-align: right
   width: calc(50% - 2px);
   display: inline-block;
 }
+.fa.pull-right{
+  margin-top: 0.5em;
+}
+.row-header{
+
+  border-bottom: 1px solid #d8d8dd;
+  padding: 10px;
+  background-color: #f0f0f5;
+}
+
+#file-upload{
+  margin: 20px 0 10px 0;
+  font-size: 16px;
+}
+
+.panel-default>.panel-heading{
+  background-color: #f0f0f5;
+}
+
+.milestone-id, .page-number
+{
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+
+}
 
 
+.panel-icon{
+
+  font-size: 16px;
+}
+
+.list-group-item{
+  border:0px solid #ddd!important;
+}
 .loader-btn {
   width: 30%;
   border-radius: 2px;

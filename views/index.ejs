@@ -31,49 +31,47 @@
 			</div>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1">
-						<div class="col-lg-10 panel-title" >
-							Upload a SRT file
+					<div class="row toggle row-header" id="dropdown-detail-1" data-toggle="detail-1">
+						<div class="col-lg-10 panel-title">
+							Upload SRT File
 
-							<div id="file-upload" >
-								<!--<p clas="half-width">Upload a file:</p>-->
-								<!--<form action="/upload" enctype="multipart/form-data" method="post">-->
-								<form action="/" enctype="multipart/form-data" method="post">
-									<!--<input type="file" name="file-to-upload" class="inline">-->
-									<!--<input type="submit" value="upload" class="inline">-->
-									<label class="up_styles">
-										<input type="file" accept=".srt" name="upload" multiple />
-									</label>
-									<!--<br>-->
-									<!-- Button to upload the choosed files -->
-									<input class="sub" type="submit" value="Upload">
-								</form>
-						
-							</div>
-						
+
+
 						</div>
 						<div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
 					</div>
 					<div id="detail-1">
-						<hr>
-						</hr>
+
 						<div class="container">
 							<div class="fluid-row">
+								<div id="file-upload">
+									<!--<p clas="half-width">Upload a file:</p>-->
+									<!--<form action="/upload" enctype="multipart/form-data" method="post">-->
+									<form action="/" enctype="multipart/form-data" method="post">
+										<!--<input type="file" name="file-to-upload" class="inline">-->
+										<!--<input type="submit" value="upload" class="inline">-->
+										<label class="up_styles">
+											<input type="file" accept=".srt" name="upload" multiple />
+										</label>
+										<!--<br>-->
+										<!-- Button to upload the choosed files -->
+										<input class="sub" type="submit" value="Upload">
+									</form>
 
+								</div>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="list-group-item">
-					<div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
-						<div class="col-lg-10 panel-title" >
+					<div class="row toggle row-header" id="dropdown-detail-2" data-toggle="detail-2">
+						<div class="col-lg-10 panel-title">
 							Books Biblographical Data
 						</div>
 						<div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
 					</div>
 					<div id="detail-2">
-						<hr>
-						</hr>
+
 						<div class="container">
 							<div class="fluid-row">
 								<div class="col-xs-6">
@@ -90,15 +88,15 @@
 					</div>
 				</li>
 				<li class="list-group-item">
-					<div class="row toggle" id="dropdown-detail-3" data-toggle="detail-3">
-						<div class="col-xs-12 panel-title" >
+					<div class="row toggle row-header" id="dropdown-detail-3" data-toggle="detail-3">
+						<div><i class="far fa-chart-bar"></i></div>
+						<div class="col-lg-10 panel-title">
 							Visualisation
 						</div>
-						<div class="col-xs-12"><i class="fa fa-chevron-down pull-right"></i></div>
+						<div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
 					</div>
 					<div id="detail-3">
-						<hr>
-						</hr>
+
 						<div class="container">
 							<div class="fluid-row">
 								<div id="madin" class="col-lg-12">
@@ -111,30 +109,29 @@
 
 
 				<li class="list-group-item">
-					<div class="row toggle" id="dropdown-detail-4" data-toggle="detail-4">
+					<div class="row toggle row-header" id="dropdown-detail-4" data-toggle="detail-4">
 						<div class="col-lg-10 panel-title">
 							Books Alignments
 						</div>
 						<div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
 					</div>
 					<div id="detail-4">
-						<hr>
-						</hr>
+
 						<div class="container">
 							<div class="fluid-row">
-								<div class="col-xs-6">
+								<div class="col-xs-6 arabic-text-18px">
 
 									<div id="bottomPanelRaw" style="display: none;">
-									<div id="b1MilestoneID"></div>
-										<div id="book1RawContent" class="padding10 bookalignments">
-										
+										<div id="b1MilestoneID"></div>
+										<div id="book1RawContent">
+
 										</div>
 
 									</div>
 								</div>
-								<div class="col-xs-6">
-								<div id="b2MilestoneID"></div>
-									<div id="book2RawContent" class="padding10 bookalignments"></div>
+								<div class="col-xs-6 arabic-text-18px">
+									<div id="b2MilestoneID"></div>
+									<div id="book2RawContent"></div>
 								</div>
 							</div>
 						</div>
@@ -142,80 +139,79 @@
 				</li>
 
 				<li class="list-group-item">
-						<div class="row toggle" id="dropdown-detail-5" data-toggle="detail-5">
-							<div class="col-lg-10 panel-title">
-								Books 
-							</div>
-							<div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
+					<div class="row toggle row-header" id="dropdown-detail-5" data-toggle="detail-5">
+						<div class="col-lg-10 panel-title">
+							Books
 						</div>
-						<div id="detail-5">
-							<hr>
-							</hr>
-							<div class="container">
-								<div class="fluid-row">
-									<div class="col-lg-12">
-											<div id="mySidenav" class="book-reader" style="opacity: 0; display: none">
-													<a id="closeBtn" href="javascript:void(0)" class="closebtn">&times;</a>
-										
-													<div class="loader-btn-wrapper">
-														<label id="book1StartBtn" class="loader-btn book1">LOAD MORE</label>
-													</div>
-													<div class="loader-btn-wrapper">
-														<label id="book2StartBtn" class="loader-btn book2">LOAD MORE</label>
-													</div>
-										
-													<div id="book1Content" class="book-content"></div>
-													<!--Book1 Loader [START]-->
-													<div id="book1Loader" class="book-content">
-														<div id="fountainG" style="top: 40%">
-															<div id="fountainG_1" class="fountainG"></div>
-															<div id="fountainG_2" class="fountainG"></div>
-															<div id="fountainG_3" class="fountainG"></div>
-															<div id="fountainG_4" class="fountainG"></div>
-															<div id="fountainG_5" class="fountainG"></div>
-															<div id="fountainG_6" class="fountainG"></div>
-															<div id="fountainG_7" class="fountainG"></div>
-															<div id="fountainG_8" class="fountainG"></div>
-														</div>
-													</div>
-													<!--Book1 Loader [END]-->
-										
-													<div id="book2Content" class="book-content"></div>
-													<!--Book2 Loader [START]-->
-													<div id="book2Loader" class="book-content">
-														<div id="fountainG" style="top: 40%">
-															<div id="fountainG_1" class="fountainG"></div>
-															<div id="fountainG_2" class="fountainG"></div>
-															<div id="fountainG_3" class="fountainG"></div>
-															<div id="fountainG_4" class="fountainG"></div>
-															<div id="fountainG_5" class="fountainG"></div>
-															<div id="fountainG_6" class="fountainG"></div>
-															<div id="fountainG_7" class="fountainG"></div>
-															<div id="fountainG_8" class="fountainG"></div>
-														</div>
-													</div>
-													<!--Book2 Loader [END]-->
-										
-													<div class="loader-btn-wrapper">
-														<label id="book1EndBtn" class="loader-btn book1">LOAD MORE</label>
-													</div>
-													<div class="loader-btn-wrapper">
-														<label id="book2EndBtn" class="loader-btn book2">LOAD MORE</label>
-													</div>
-										
-												</div>
-										
-	
+						<div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
+					</div>
+					<div id="detail-5">
+
+						<div class="container">
+							<div class="fluid-row">
+								<div class="col-lg-12">
+									<div id="mySidenav" class="book-reader" style="opacity: 0; display: none">
+										<a id="closeBtn" href="javascript:void(0)" class="closebtn">&times;</a>
+
+										<div class="loader-btn-wrapper">
+											<label id="book1StartBtn" class="loader-btn book1">LOAD MORE</label>
 										</div>
+										<div class="loader-btn-wrapper">
+											<label id="book2StartBtn" class="loader-btn book2">LOAD MORE</label>
+										</div>
+
+										<div id="book1Content" class="book-content arabic-text-18px"></div>
+										<!--Book1 Loader [START]-->
+										<div id="book1Loader" class="book-content arabic-text-16px">
+											<div id="fountainG" style="top: 40%">
+												<div id="fountainG_1" class="fountainG"></div>
+												<div id="fountainG_2" class="fountainG"></div>
+												<div id="fountainG_3" class="fountainG"></div>
+												<div id="fountainG_4" class="fountainG"></div>
+												<div id="fountainG_5" class="fountainG"></div>
+												<div id="fountainG_6" class="fountainG"></div>
+												<div id="fountainG_7" class="fountainG"></div>
+												<div id="fountainG_8" class="fountainG"></div>
+											</div>
+										</div>
+										<!--Book1 Loader [END]-->
+
+										<div id="book2Content" class="book-content arabic-text-18px"></div>
+										<!--Book2 Loader [START]-->
+										<div id="book2Loader" class="book-content arabic-text-16px">
+											<div id="fountainG" style="top: 40%">
+												<div id="fountainG_1" class="fountainG"></div>
+												<div id="fountainG_2" class="fountainG"></div>
+												<div id="fountainG_3" class="fountainG"></div>
+												<div id="fountainG_4" class="fountainG"></div>
+												<div id="fountainG_5" class="fountainG"></div>
+												<div id="fountainG_6" class="fountainG"></div>
+												<div id="fountainG_7" class="fountainG"></div>
+												<div id="fountainG_8" class="fountainG"></div>
+											</div>
+										</div>
+										<!--Book2 Loader [END]-->
+
+										<div class="loader-btn-wrapper">
+											<label id="book1EndBtn" class="loader-btn book1">LOAD MORE</label>
+										</div>
+										<div class="loader-btn-wrapper">
+											<label id="book2EndBtn" class="loader-btn book2">LOAD MORE</label>
+										</div>
+
 									</div>
-							
+
+
 								</div>
 							</div>
-						</div>
-					</li>
 
-			</ul>
+						</div>
+					</div>
 		</div>
+		</li>
+
+		</ul>
+	</div>
 
 
 	<!--	<div class="container">
@@ -241,13 +237,13 @@
 		<span class="header-title">KITAB Text Reuse - Data Visualisation App</span>
 
 	</div> -->
-		<!-- <div class="upload-book">
+	<!-- <div class="upload-book">
 		<span>
 		Upload book button
 	</span> -->
 
-		<!--Books View Bottom Panel [START]-->
-	
+	<!--Books View Bottom Panel [START]-->
+
 
 
 	<!--Books View Bottom Panel [END]-->
@@ -255,17 +251,17 @@
 	<script type="text/javascript" src="javascripts/js/script.js"></script>
 	<script>
 
-	
+
 		var book_names = '<%= names %>'.split("_");
 		var filename = '<%= names %>';
-		
+
 
 		renderVisual(filename, {
-		//renderVisual('Shamela0035100_JK006838.srt', {
-            book1: book_names[0],
-            book2: book_names[1].replace('.srt',"")
-			
-        });
+			//renderVisual('Shamela0035100_JK006838.srt', {
+			book1: book_names[0],
+			book2: book_names[1].replace('.srt', "")
+
+		});
 
 		$(document).ready(function () {
 			$('[id^=detail-]').show();
@@ -276,64 +272,60 @@
 			});
 
 			highlightText();
-			
+
 		});
-  
 
-  
+
+
 		function highlightText() {
-    $('#book2RawContent').on(
-        'mouseup',
-        function () {
-            var fullString = $(this).text();
+			$('#book2RawContent').on(
+				'mouseup',
+				function () {
+					var fullString = $(this).text();
+					var targetString = $('#book1RawContent').text();
+					window.get
+					var objSelText = getSelectionText();
+					var position = targetString.indexOf(objSelText.text);
+					console.log(position);
+					if (position > -1) {
+
+						var newString = targetString.substring(0, position);
+						if (objSelText.text.length < position) {
+							newString = newString
+								+ '<span style="background-color:yellow;">'
+								+ targetString.substring(position,
+									objSelText.text.length + position)
+								+ '</span>';
+						} else {
+							newString = newString
+								+ '<span style="background-color:yellow;">'
+								+ targetString.substring(position,
+									objSelText.text.length) + '</span>';
+						}
+						newString = newString
+							+ targetString.substring((position)
+								+ objSelText.text.length);
+						$('#book1RawContent').html(newString);
+					}
+
+				});
+		}
+
+		function getSelectionText() {
+
+			var objSelText = new Array();
+			if (window.getSelection) {
+				objSelText.text = window.getSelection().toString();
 			
-			console.log(fullString.length);
-            var targetString = $('#book1RawContent').text();
-			console.log(targetString.length);
-			//var targetString = $('#book1RawContent').attr('data-source-string');
-            var objSelText = getSelectionText();
-            var position = fullString.indexOf(objSelText.text);
-			console.log(position);
-            position = objSelText.StartIndex;
-            if (position > -1) {
-
-                var newString = targetString.substring(0, position);
-                if (objSelText.text.length < position) {
-                    newString = newString
-                        + '<span style="background-color:yellow;">'
-                        + targetString.substring(position,
-                            objSelText.text.length + position)
-                        + '</span>';
-                } else {
-                    newString = newString
-                        + '<span style="background-color:yellow;">'
-                        + targetString.substring(position,
-                            objSelText.text.length) + '</span>';
-                }
-                newString = newString
-                    + targetString.substring((position)
-                        + objSelText.text.length);
-                $('#book1RawContent').html(newString);
-            }
-
-        });
-}
-
-function getSelectionText() {
-
-    var objSelText = new Array();
-    if (window.getSelection) {
-        objSelText.text = window.getSelection().toString();
-		console.log(objSelText.text);
-        objSelText.StartIndex = window.getSelection().anchorOffset;
-        objSelText.EndIndex = window.getSelection().focusOffset;
-    } else if (document.selection && document.selection.type != "Control") {
-        objSelText.text = document.selection.createRange().text;
-        objSelText.StartIndex = document.selection.createRange().anchorOffset;
-        objSelText.EndIndex = document.selection.createRange().focusOffset;
-    }
-    return objSelText;
-}
+				objSelText.StartIndex = window.getSelection().anchorOffset;
+				objSelText.EndIndex = window.getSelection().focusOffset;
+			} else if (document.selection && document.selection.type != "Control") {
+				objSelText.text = document.selection.createRange().text;
+				objSelText.StartIndex = document.selection.createRange().anchorOffset;
+				objSelText.EndIndex = document.selection.createRange().focusOffset;
+			}
+			return objSelText;
+		}
 	</script>
 </body>
 
